@@ -1,0 +1,15 @@
+books_store_books:
+    resource: "@BooksStoreBundle/Resources/config/routing/books.yml"
+    prefix:   /books
+
+books_store_category:
+    resource: "@BooksStoreBundle/Resources/config/routing/category.yml"
+    prefix:   /category
+
+books_store_author:
+    resource: "@BooksStoreBundle/Resources/config/routing/author.yml"
+    prefix:   /author
+
+books_store_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BooksStoreBundle:Default:index }

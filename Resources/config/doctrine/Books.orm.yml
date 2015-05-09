@@ -1,0 +1,16 @@
+BooksStoreBundle\Entity\Books:
+    type: entity
+    table: null
+    repositoryClass: BooksStoreBundle\Entity\BooksRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            column: Name
+    lifecycleCallbacks: {  }

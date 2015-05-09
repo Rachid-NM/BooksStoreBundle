@@ -1,0 +1,30 @@
+category:
+    path:     /
+    defaults: { _controller: "BooksStoreBundle:Category:index" }
+
+category_show:
+    path:     /{id}/show
+    defaults: { _controller: "BooksStoreBundle:Category:show" }
+
+category_new:
+    path:     /new
+    defaults: { _controller: "BooksStoreBundle:Category:new" }
+
+category_create:
+    path:     /create
+    defaults: { _controller: "BooksStoreBundle:Category:create" }
+    methods:  POST
+
+category_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BooksStoreBundle:Category:edit" }
+
+category_update:
+    path:     /{id}/update
+    defaults: { _controller: "BooksStoreBundle:Category:update" }
+    methods:  [POST, PUT]
+
+category_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BooksStoreBundle:Category:delete" }
+    methods:  [POST, DELETE]

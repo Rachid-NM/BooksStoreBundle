@@ -1,0 +1,30 @@
+books:
+    path:     /
+    defaults: { _controller: "BooksStoreBundle:Books:index" }
+
+books_show:
+    path:     /{id}/show
+    defaults: { _controller: "BooksStoreBundle:Books:show" }
+
+books_new:
+    path:     /new
+    defaults: { _controller: "BooksStoreBundle:Books:new" }
+
+books_create:
+    path:     /create
+    defaults: { _controller: "BooksStoreBundle:Books:create" }
+    methods:  POST
+
+books_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BooksStoreBundle:Books:edit" }
+
+books_update:
+    path:     /{id}/update
+    defaults: { _controller: "BooksStoreBundle:Books:update" }
+    methods:  [POST, PUT]
+
+books_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BooksStoreBundle:Books:delete" }
+    methods:  [POST, DELETE]
