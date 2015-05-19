@@ -1,6 +1,6 @@
 # BooksStoreBundle
 A simple books store bundle.
-Version : V0.
+Version : V0.1.
 SF 2.6.0.
 
 Hhis script is a beginning of developing a bundle for managing books.
